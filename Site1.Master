@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Quiz_Intech.Site1" %>
+
+<!DOCTYPE html>
+<script runat="server">
+
+</script>
+
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- datatables -->
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- fontawsome -->
+    <link href="fontawsome/css/all.css" rel="stylesheet" />
+
+    <!-- boottrap jquery -->
+    <script src="bootstrap/jss/jquery-3.3.1.slim.min.js"></script>
+    <!-- boottrap popper -->
+    <script src="bootstrap/jss/popper.min.js"></script>
+    <!-- boottrap js -->
+    <script src="bootstrap/jss/bootstrap.min.js"></script>
+
+    <!-- fontawsome js -->
+    <script src="fontawsome/js/all.js"></script>
+
+    <!-- datatables js -->
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+    <!-- MasterStyleSheet -->
+    <link href="MasterCss/MasterStyleSheet.css" rel="stylesheet" />
+    
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+          <div style="background-color: dodgerblue">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="https://intech-systems.com/">
+                   <img src="images/intechlogo.png" width="85" height="30"/>
+
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Home</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Add New Admin</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Add Subject</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Add Question</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton6_Click">Create Quiz</asp:LinkButton>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton7" runat="server" OnClick="LinkButton5_Click">Logout</asp:LinkButton>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+      
+
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+        
+     
+        <%--Footer section--%>
+        <footer class="fixed-bottom">
+            <div id="footer1" class="container-fluid abc">
+                <div class="row">
+                    
+                        <p style="color: whitesmoke" style="background-color: dodgerblue">&copy All right Reversed. 
+                            <center>
+                                <a class="footerlinks" href="https://intech-systems.com/" target="_blank">Intech Systems</a>
+                            </center>
+                        </p>
+
+                </div>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>
